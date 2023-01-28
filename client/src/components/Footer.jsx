@@ -1,4 +1,5 @@
 import logo from "../../images/logo.png";
+import { AiFillGithub } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -23,14 +24,20 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-center itmes-center flex-col mt-5">
-        <p className="text-white text-small text-center">Come join us</p>
-        <p className="text-white text-small text-center">
-          info@cryptdemo.com
-        </p>
+        <p className="text-white text-lg text-center">Come join us</p>
+        <a
+          href="https://github.com/yograjpaudel/crypt"
+          className="text-white w-60 mt-2 border-[1px] p-2 border-[#7ae1b5] rounded-full cursor-pointer flex flex-row justify-center items-center space-x-2"
+        >
+          <AiFillGithub className="text-xl" />
+          <p>GitHub</p>
+        </a>
       </div>
       <div className="sm:w-[90%] w-full h-[0.25px] bg-gray-400 mt-5" />
       <div className="sm:w-[90%] w-full flex justify-between items-center mt-3">
-        <p className="text-white text-small text-center">@cryptdemo 2023</p>
+        <p className="text-white text-small text-center">
+          @crypt-yograjpaudel.vercel.app 2023
+        </p>
         <p className="text-white text-small text-center">All rights reserved</p>
       </div>
     </div>
