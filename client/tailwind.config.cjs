@@ -11,6 +11,8 @@ module.exports = {
     },
     extend: {
       screens: {
+        xxs: "480px",
+        xs: "560px",
         mf: "990px",
       },
       keyframes: {

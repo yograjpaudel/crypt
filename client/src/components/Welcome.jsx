@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
+import { RiSendPlane2Fill } from "react-icons/ri";
 
 import { TransactionContext } from "../context/TransactionContext";
 import { Loader } from "./";
@@ -26,7 +27,7 @@ const Welcome = () => {
     sendTransaction,
     handleChange,
     isLoading,
-  } = useContext(TransactionContext);  
+  } = useContext(TransactionContext);
 
   const commonStyles =
     "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
@@ -50,7 +51,7 @@ const Welcome = () => {
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
             Explore the crypto world. Buy and sell cryptocurrencies easily on
-            Krypto.
+            Crypt.
           </p>
           {!currentAccount && (
             <button
@@ -66,10 +67,14 @@ const Welcome = () => {
           )}
           <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
             <div className={`rounded-tl-2xl ${commonStyles}`}>Reliability</div>
-            <div className={commonStyles}>Security</div>
-            <div className={`rounded-tr-2xl ${commonStyles}`}>Ethereum</div>
-            <div className={`rounded-bl-2xl ${commonStyles}`}>Web 3.0</div>
-            <div className={commonStyles}>Low fees</div>
+            <div className={`rounded-tr-2xl sm:rounded-none ${commonStyles}`}>
+              Security
+            </div>
+            <div className={`sm:rounded-tr-2xl ${commonStyles}`}>Ethereum</div>
+            <div className={`sm:rounded-bl-2xl ${commonStyles}`}>Web 3.0</div>
+            <div className={`rounded-bl-2xl sm:rounded-none ${commonStyles}`}>
+              Low fees
+            </div>
             <div className={`rounded-br-2xl ${commonStyles}`}>Blockchain</div>
           </div>
         </div>
@@ -83,7 +88,9 @@ const Welcome = () => {
                 <BsInfoCircle fontSize={17} color="#fff" />
               </div>
               <div>
-                <p className="text-white font-light text-sm">{shortenAddress(currentAccount)}</p>
+                <p className="text-white font-light text-sm">
+                  {shortenAddress(currentAccount)}
+                </p>
                 <p className="text-white font-semibold text-lg mt-1">
                   Ethereum
                 </p>
@@ -124,9 +131,12 @@ const Welcome = () => {
               <button
                 type="button"
                 onClick={handleSubmit}
-                className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer"
+                className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer flex flex-row justify-center items-center space-x-2"
               >
-                Send Now
+                <span>Send Now</span>
+                <div className="w-8 h-8 rounded-full flex justify-center items-center bg-white">
+                  <RiSendPlane2Fill className="text-blue-600 text-xl" />
+                </div>
               </button>
             )}
           </div>

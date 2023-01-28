@@ -3,6 +3,7 @@ import { TransactionContext } from "../context/TransactionContext";
 import dummyData from "../utils/dummyData";
 import { shortenAddress } from "../utils/shortenAddress";
 import useFetch from "../hooks/useFetch";
+import { BsChevronDoubleDown } from "react-icons/bs";
 
 const TransactionCard = ({
   addressTo,
@@ -72,8 +73,13 @@ const Transactions = () => {
     <div className="flex w-full justify-center items center 2xl:px-20 gradient-bg-transactions">
       <div className="flex flex-col md:p-12 py-12 px-4">
         {currentAccount ? (
-          <h3 className="text-white text-3xl text-center my-2">
-            Latest Transactions
+          <h3 className="text-white text-3xl text-center my-2 justify-center items-center ">
+            <span className="flex flex-row justify-center items-center space-x-3">
+              <p>Latest Transactions</p>
+              <div className="animate-bounce w-12 h-12 rounded-full flex justify-center items-center bg-[#000080]">
+                <BsChevronDoubleDown className="text-[#fff]" />
+              </div>
+            </span>
           </h3>
         ) : (
           <h3 className="text-white text-3xl text-center my-2">
