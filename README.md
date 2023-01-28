@@ -1,12 +1,25 @@
-# Crypt - Blockchain Application(Web 3.0)
+<img src="readme.png" align="right" />
+
+# Crypt 
+> Blockchain Application(Web 3.0)
+
 ![Crypt](./ui_image.png)
 
 ## Introduction
-A Web3.0 blockchain application:
-Web3.0 methodologies
-Solidity
-Metamask
 
-Real Web 3.0 Application - from start to end👌👌👌
+With a Stunning design, connected to the Blockchain, MetaMask pairing, interaction with Smart contracts,
+sending Ethereum through the blockchain network, writing Solidity code, and much more,
+Crypt is the best #Web3.0 #Blockchain application that you can currently find on GitHub👌👌👌
 
-#### Influenced by - [Adrian Hajdin - JS Mastery](https://github.com/adrianhajdin/project_web3.0)
+> [GitHub Code](https://github.com/yograjpaudel/web3.0) (give it a star ⭐)
+
+### Documents Guide:
+
+Vite | https://vitejs.dev/guide/
+--- | ---
+Tailwind Setup | https://tailwindcss.com/docs/guides/vite
+MetaMask | download extention
+Goerli | https://goerli.etherscan.io/
+Alchemy | https://alchemy.com
+
+> Influenced by [Adrian Hajdin - JS Mastery](https://github.com/adrianhajdin/project_web3.0)
