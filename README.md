@@ -15,6 +15,13 @@ Crypt is the best #Web3.0 #Blockchain application that you can currently find on
 
 ### Documents Guide:
 
+> file: client/.env
+```
+VITE_GIPHY_API=
+VITE_ALCHEMY_API_KEY=
+VITE_GOERLI_PRIVATE_KEY=
+```
+
 Vite | https://vitejs.dev/guide/
 --- | ---
 Tailwind Setup | https://tailwindcss.com/docs/guides/vite
